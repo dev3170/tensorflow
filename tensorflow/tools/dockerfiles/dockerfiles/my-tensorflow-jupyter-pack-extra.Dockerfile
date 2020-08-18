@@ -86,8 +86,8 @@ RUN python3 -m pip --no-cache-dir install \
     # h5py fornece uma interface de alto e baixo nível para a biblioteca HDF5 do Python.
     h5py \
     
-    #keras - biblioteca de aprendizado profundo para trabalhar com dados de imagem, dados de texto e dados de sequência.
-    keras_preprocessing \
+    #keras - biblioteca de rede neural profunda.
+    keras \
     
     #Matplotlib - biblioteca abrangente para a criação de visualizações estáticas, animadas e interativas em Python
     matplotlib \
@@ -116,7 +116,7 @@ RUN python3 -m pip --no-cache-dir install \
     #Pacote para trabalhar com JSON
     json \
     
-    #Pacote para realizar requisições HTTP
+    #Request - biblioteca para realizar requisições HTTP
     requests \
     
     #scikit-learn é uma biblioteca de aprendizado de máquina
@@ -126,21 +126,52 @@ RUN python3 -m pip --no-cache-dir install \
     nltk \
     
     #web crawling que faz extração de dados em websites
-    scrapy \
+    Scrapy \
     
     #conecta com banco de dados Mongodb
     pymongo \
     
-    #conecta com banco de dados postgresql
+    #Conecte-se a um banco de dados usando strings de conexão de URL SQLAlchemy
     ipython-sql \
-    psycopg2 \
-    pgspecial \
     
-    #conecta com banco de dados sqlite
-    sqlite3 \
+    #Psycopg é o adaptador de banco de dados PostgreSQL para Python
+    psycopg2 \
+    
+    #Este pacote fornece uma API para executar meta-comandos (também conhecidos como “especiais” ou “comandos de barra invertida”) no PostgreSQL.
+    pgspecial \
     
     #conecta com banco de dados Elasticsearch
     eland \
+    
+    #PyTorch - biblioteca de aprendizado de máquina, usada para aplicativos como visão computacional e processamento de linguagem natural
+    pytorch \
+    
+    #Theano - biblioteca Python e um compilador que torna a computação 140x mais rápida
+    Theano \
+    
+    #Fire - biblioteca que gerar automaticamente CLIs (interfaces de linha de comando)
+    fire \
+    
+    #Arrow - biblioteca amigável que basicamente trabalha com datas e horas
+    arrow \
+    
+    #FlashText - biblioteca Python que oferece pesquisa e substituição fáceis de palavras dos documentos
+    flashText \
+    
+    #SQLAlchemy - biblioteca de mapeamento objeto-relacional SQL para Python
+    SQLAlchemy \
+    
+    #Luminoth - kit de ferramentas dedicado à visão computacional, suporta a detecção contínua de um objeto
+    luminoth \
+    
+    #Bokeh - biblioteca de visualização de dados para python
+    bokeh \
+    
+    #Cirq - biblioteca Python geralmente para circuitos quânticos de escala intermediária ruidosa (NISQ)
+    cirq \
+    
+    #OpenCV - pacote para processamento de imagens
+    opencv-python
     
 #Bazel é uma ferramenta de software livre que permite a automação da construção e teste de software
 # Install bazel
