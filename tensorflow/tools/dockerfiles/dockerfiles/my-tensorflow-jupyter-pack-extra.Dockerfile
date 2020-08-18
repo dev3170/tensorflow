@@ -76,22 +76,73 @@ RUN apt-get update && apt-get install -y \
     openjdk-8-jdk \
     python3-dev \
     virtualenv \
-    swig
+    swig 
 
 RUN python3 -m pip --no-cache-dir install \
+
+    #Pillow - biblioteca de imagens Python
     Pillow \
+    
+    # h5py fornece uma interface de alto e baixo nível para a biblioteca HDF5 do Python.
     h5py \
+    
+    #keras - biblioteca de aprendizado profundo para trabalhar com dados de imagem, dados de texto e dados de sequência.
     keras_preprocessing \
+    
+    #Matplotlib - biblioteca abrangente para a criação de visualizações estáticas, animadas e interativas em Python
     matplotlib \
+    
+    #mock - biblioteca para teste em Python
     mock \
+    
+    #Numpy - Pacote com métodos numéricos e representações matriciais
     'numpy<1.19.0' \
+    
+    #Scipy - fornece uma manipulação conveniente e rápida de um array N-dimensional
     scipy \
-    sklearn \
+    
+    # Pandas - Pacote para exploração e análise de dados
     pandas \
+    
+    #módulo Python
     future \
     portpicker \
-    enum34
-
+    enum34 \
+    
+    ##Adicionado Extra ao dockerfile
+    #Pacote para construção de modelo baseado na técnica Gradient Boosting
+    xgboost \
+    
+    #Pacote para trabalhar com JSON
+    json \
+    
+    #Pacote para realizar requisições HTTP
+    requests \
+    
+    #scikit-learn é uma biblioteca de aprendizado de máquina
+    scikit-learn \
+    
+    #Nltk - Natural Language Toolkit, bibliotecas para processamento simbólico e estatístico da linguagem natural
+    nltk \
+    
+    #web crawling que faz extração de dados em websites
+    scrapy \
+    
+    #conecta com banco de dados Mongodb
+    pymongo \
+    
+    #conecta com banco de dados postgresql
+    ipython-sql \
+    psycopg2 \
+    pgspecial \
+    
+    #conecta com banco de dados sqlite
+    sqlite3 \
+    
+    #conecta com banco de dados Elasticsearch
+    eland \
+    
+#Bazel é uma ferramenta de software livre que permite a automação da construção e teste de software
 # Install bazel
 ARG BAZEL_VERSION=3.1.0
 RUN mkdir /bazel && \
