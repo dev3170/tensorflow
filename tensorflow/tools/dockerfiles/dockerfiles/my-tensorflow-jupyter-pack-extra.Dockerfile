@@ -113,9 +113,6 @@ RUN python3 -m pip --no-cache-dir install \
     #Pacote para construção de modelo baseado na técnica Gradient Boosting
     xgboost \
     
-    #Pacote para trabalhar com JSON
-    json \
-    
     #Request - biblioteca para realizar requisições HTTP
     requests \
     
