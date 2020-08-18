@@ -125,6 +125,9 @@ RUN python3 -m pip --no-cache-dir install \
     #web crawling que faz extração de dados em websites
     Scrapy \
     
+    #
+    pypi \
+    
     #conecta com banco de dados Mongodb
     pymongo \
     
