@@ -131,9 +131,6 @@ RUN python3 -m pip --no-cache-dir install \
     #Conecte-se a um banco de dados usando strings de conexão de URL SQLAlchemy
     ipython-sql \
     
-    #Psycopg é o adaptador de banco de dados PostgreSQL para Python
-    psycopg2 \
-    
     #Este pacote fornece uma API para executar meta-comandos (também conhecidos como “especiais” ou “comandos de barra invertida”) no PostgreSQL.
     pgspecial \
     
