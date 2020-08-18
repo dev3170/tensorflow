@@ -126,7 +126,7 @@ RUN python3 -m pip --no-cache-dir install \
     Scrapy \
     
     #
-    pypi \
+    #pypi \
     
     #conecta com banco de dados Mongodb
     pymongo \
@@ -135,7 +135,7 @@ RUN python3 -m pip --no-cache-dir install \
     ipython-sql \
     
     #Este pacote fornece uma API para executar meta-comandos (também conhecidos como “especiais” ou “comandos de barra invertida”) no PostgreSQL.
-    pgspecial \
+    #pgspecial \
     
     #conecta com banco de dados Elasticsearch
     eland \
