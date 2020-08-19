@@ -59,15 +59,14 @@ ENV LANG C.UTF-8
 
 RUN apt-get update && apt-get install -y \
     python3 \
-    python3-pip
+    python3-pip \
+    python \
+    python-pip
 
 RUN python3 -m pip --no-cache-dir install --upgrade \
     pip \
-    setuptools \
-    wheel \
-    dlib \
-    cmake
-
+    setuptools
+   
 # Some TF tools expect a "python" binary
 RUN ln -s $(which python3) /usr/local/bin/python
 
@@ -80,20 +79,21 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     virtualenv \
     swig \
-    #lib para rodar o pyaudio
-    python3-all-dev \
-    libpulse-dev \
-    nano \
-    libasound2-dev
+    nano 
   
-
-#pocketsphinx - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
-#RUN python3 -m pip install --upgrade pocketsphinx
+RUN python -m pip --no-cache-dir install --upgrade \
+    pip \
+    build-essential \
+    setuptools \
+    wheel \
+    dlib \
+    cmake \
+    libasound2-dev \
+    libpulse-dev \
+    #pocketsphinx - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
+    pocketsphinx 
 
 RUN python3 -m pip --no-cache-dir install \
-     
-    #pocketsphinx - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
-    pocketsphinx \
 
     #Pillow - biblioteca de imagens Python
     Pillow \
