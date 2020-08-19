@@ -63,7 +63,9 @@ RUN apt-get update && apt-get install -y \
 
 RUN python3 -m pip --no-cache-dir install --upgrade \
     pip \
-    setuptools
+    setuptools \
+    cmake \
+    dlib
 
 # Some TF tools expect a "python" binary
 RUN ln -s $(which python3) /usr/local/bin/python
