@@ -184,23 +184,11 @@ RUN python3 -m pip --no-cache-dir install \
     #wikipedia - Este pacote em python extrai os dados necessários da Wikipedia
     wikipedia \
     
-    #datetime - reconhece data e hora
-    datetime \
-    
-    #os - biblioteca que fornece a função de interagir com o sistema operacional
-    os \
-    
-    # subprocess - biblioteca padrão usada para processar vários comandos do sistema, como fazer logoff ou reiniciar o PC.
-    subprocess \
+    #datetime2 - reconhece data e hora
+    datetime2 \
     
     #ecapture - Este módulo é usado para capturar imagens de sua câmera
     ecapture \
-    
-    #time - caputura tempo
-    time \
-    
-    #webbrowser - fornece uma interface para exibir documentos baseados na web
-    webbrowser \
     
     #pyaudio - pacote para acessar seu microfone com SpeechRecognizer
     PyAudio \
@@ -211,14 +199,11 @@ RUN python3 -m pip --no-cache-dir install \
     #Pygame - conjunto de plataforma cruzada de módulos Python projetado para escrever videogames
     Pygame \
     
-    #re - pacote que fornece expressões regulares
-    re \
+    #xsmtplib - enviar e-mails com Python por SMTP
+    xsmtplib \
     
-    #smtplib - enviar e-mails com Python por SMTP
-    smtplib \
-    
-    #urllib - módulo urllib no Python3, acessar sites, baixar dados, analisar dados, modificar seus cabeçalhos e fazer qualquer solicitação GET e POST
-    urllib \
+    #urllib3 - módulo urllib no Python3, acessar sites, baixar dados, analisar dados, modificar seus cabeçalhos e fazer qualquer solicitação GET e POST
+    urllib3 \
     
     #pocketsphinx2 - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
     pocketsphinx2 \
@@ -227,11 +212,13 @@ RUN python3 -m pip --no-cache-dir install \
     playsound \
     
     #google api python client - conecta na api do google cloud
-    google-api-python-client
+    google-api-python-client \
     
+    #re2 - pacote que fornece expressões regulares
+    re2 
+
     
-    
-    
+#Instalar pacote dos idiomas pt, es, en do spacy   
 RUN python3 -m spacy download en && python -m spacy download pt && python -m spacy download es
     
 #Bazel é uma ferramenta de software livre que permite a automação da construção e teste de software
