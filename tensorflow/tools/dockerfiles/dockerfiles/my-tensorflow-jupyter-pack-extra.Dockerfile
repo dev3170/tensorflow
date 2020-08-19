@@ -118,6 +118,10 @@ RUN python3 -m pip --no-cache-dir install \
     
     #scikit-learn é uma biblioteca de aprendizado de máquina
     scikit-learn \
+    sklearn \
+    
+    #seaborn - biblioteca de visualização de dados Python baseada em matplotlib
+    seaborn \
     
     #Nltk - Natural Language Toolkit, bibliotecas para processamento simbólico e estatístico da linguagem natural
     nltk \
