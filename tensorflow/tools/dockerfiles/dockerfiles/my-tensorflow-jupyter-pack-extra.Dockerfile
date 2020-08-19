@@ -59,7 +59,8 @@ ENV LANG C.UTF-8
 
 RUN apt-get update && apt-get install -y \
     python3 \
-    python3-pip
+    python3-pip \
+    nano
 
 RUN python3 -m pip --no-cache-dir install --upgrade \
     pip \
@@ -166,7 +167,72 @@ RUN python3 -m pip --no-cache-dir install \
     cirq \
     
     #OpenCV - pacote para processamento de imagens
-    opencv-python
+    opencv-python \
+    
+    #spacy - biblioteca de processamento de linguagem natural para Python
+    spacy \
+    
+    #face_recognition - biblioteca de reconhecimento facial em foto e video
+    face_recognition \
+    
+    #pyttsx3 - biblioteca de conversão de texto em fala em Python, que funciona offline 
+    pyttsx3 \
+    
+    #SpeechRecognition - Biblioteca para realização de reconhecimento de fala, com suporte para diversos engines e APIs, online e offline.
+    SpeechRecognition \
+    
+    #wikipedia - Este pacote em python extrai os dados necessários da Wikipedia
+    wikipedia \
+    
+    #datetime - reconhece data e hora
+    datetime \
+    
+    #os - biblioteca que fornece a função de interagir com o sistema operacional
+    os \
+    
+    # subprocess - biblioteca padrão usada para processar vários comandos do sistema, como fazer logoff ou reiniciar o PC.
+    subprocess \
+    
+    #ecapture - Este módulo é usado para capturar imagens de sua câmera
+    ecapture \
+    
+    #time - caputura tempo
+    time \
+    
+    #webbrowser - fornece uma interface para exibir documentos baseados na web
+    webbrowser \
+    
+    #pyaudio - pacote para acessar seu microfone com SpeechRecognizer
+    PyAudio \
+    
+    #gTTS - biblioteca Python e ferramenta CLI para fazer interface com a API text-to-speech do Google Translate
+    gTTS \
+    
+    #Pygame - conjunto de plataforma cruzada de módulos Python projetado para escrever videogames
+    Pygame \
+    
+    #re - pacote que fornece expressões regulares
+    re \
+    
+    #smtplib - enviar e-mails com Python por SMTP
+    smtplib \
+    
+    #urllib - módulo urllib no Python3, acessar sites, baixar dados, analisar dados, modificar seus cabeçalhos e fazer qualquer solicitação GET e POST
+    urllib \
+    
+    #pocketsphinx2 - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
+    pocketsphinx2 \
+    
+    #playsound - módulo de função única sem dependências para reproduzir sons.
+    playsound \
+    
+    #google api python client - conecta na api do google cloud
+    google-api-python-client
+    
+    
+    
+    
+RUN python3 -m spacy download en && python -m spacy download pt && python -m spacy download es
     
 #Bazel é uma ferramenta de software livre que permite a automação da construção e teste de software
 # Install bazel
