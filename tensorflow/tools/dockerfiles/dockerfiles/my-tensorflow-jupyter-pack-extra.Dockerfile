@@ -78,15 +78,12 @@ RUN apt-get update && apt-get install -y \
     virtualenv \
     swig \
     nano \
-    wheel \
-    dlib \
-    cmake \
     libasound2-dev \
     libpulse-dev
     #pocketsphinx - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
     #pocketsphinx 
 
-RUN python3 -m pip --no-cache-dir install \
+RUN python3 -m pip --no-cache-dir install dlib cmake wheel \
 
     #Pillow - biblioteca de imagens Python
     Pillow \
