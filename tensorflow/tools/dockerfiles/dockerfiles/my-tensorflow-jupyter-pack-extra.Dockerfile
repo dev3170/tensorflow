@@ -59,9 +59,7 @@ ENV LANG C.UTF-8
 
 RUN apt-get update && apt-get install -y \
     python3 \
-    python3-pip \
-    python \
-    python-pip
+    python3-pip
 
 RUN python3 -m pip --no-cache-dir install --upgrade \
     pip \
@@ -81,17 +79,17 @@ RUN apt-get update && apt-get install -y \
     swig \
     nano 
   
-RUN python -m pip --no-cache-dir install --upgrade \
-    pip \
-    build-essential \
-    setuptools \
-    wheel \
-    dlib \
-    cmake \
-    libasound2-dev \
-    libpulse-dev \
+    #RUN python -m pip --no-cache-dir install --upgrade \
+    #pip \
+    #build-essential \
+    #setuptools \
+    #wheel \
+    #dlib \
+    #cmake \
+    #libasound2-dev \
+    #libpulse-dev \
     #pocketsphinx - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
-    pocketsphinx 
+    #pocketsphinx 
 
 RUN python3 -m pip --no-cache-dir install \
 
