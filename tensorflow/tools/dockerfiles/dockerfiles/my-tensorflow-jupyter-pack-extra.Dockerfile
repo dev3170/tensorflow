@@ -63,9 +63,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN python3 -m pip --no-cache-dir install --upgrade \
     pip \
-    setuptools \
-    cmake \
-    dlib
+    setuptools
 
 # Some TF tools expect a "python" binary
 RUN ln -s $(which python3) /usr/local/bin/python
@@ -83,6 +81,10 @@ RUN apt-get update && apt-get install -y \
     python3-all-dev \
     libpulse-dev \
     nano 
+  
+
+#pocketsphinx2 - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
+RUN python3 -m pip install --upgrade pip setuptools wheel && pip install --upgrade pocketsphinx2
 
 RUN python3 -m pip --no-cache-dir install \
 
@@ -211,11 +213,8 @@ RUN python3 -m pip --no-cache-dir install \
     playsound \
     
     #google api python client - conecta na api do google cloud
-    google-api-python-client \
-    
-    #comando para rodar o pyaudio e pocketsphinx2 = sudo apt-get install python3 python3-all-dev python3-pip build-essential swig git libpulse-dev  
-    #pocketsphinx2 - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
-    pocketsphinx2
+    google-api-python-client 
+
     
 #Bazel é uma ferramenta de software livre que permite a automação da construção e teste de software
 # Install bazel
