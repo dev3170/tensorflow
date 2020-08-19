@@ -63,7 +63,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN python3 -m pip --no-cache-dir install --upgrade \
     pip \
-    setuptools
+    setuptools \
+    wheel
 
 # Some TF tools expect a "python" binary
 RUN ln -s $(which python3) /usr/local/bin/python
@@ -78,13 +79,16 @@ RUN apt-get update && apt-get install -y \
     virtualenv \
     swig \
     #lib para rodar o pyaudio
+    python-dev \ 
     python3-all-dev \
     libpulse-dev \
-    nano 
+    nano \
+    libasound2-dev
   
 
 #pocketsphinx2 - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
-RUN python3 -m pip install --upgrade pip setuptools wheel && pip install --upgrade pocketsphinx2
+RUN python3 -m pip install --upgrade pocketsphinx2
+#sudo apt-get install -y python python-dev python-pip build-essential swig git libpulse-dev
 
 RUN python3 -m pip --no-cache-dir install \
 
