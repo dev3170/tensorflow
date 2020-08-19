@@ -77,12 +77,8 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     virtualenv \
     swig \
-    nano 
-  
-    #RUN python -m pip --no-cache-dir install --upgrade \
-    #pip \
-    #build-essential \
-    #setuptools \
+    nano \
+    
     #wheel \
     #dlib \
     #cmake \
