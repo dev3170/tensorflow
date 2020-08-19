@@ -81,16 +81,14 @@ RUN apt-get update && apt-get install -y \
     virtualenv \
     swig \
     #lib para rodar o pyaudio
-    python-dev \ 
     python3-all-dev \
     libpulse-dev \
     nano \
     libasound2-dev
   
 
-#pocketsphinx2 - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
-RUN python3 -m pip install --upgrade pocketsphinx2
-#sudo apt-get install -y python python-dev python-pip build-essential swig git libpulse-dev
+#pocketsphinx - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
+RUN python3 -m pip install --upgrade pocketsphinx
 
 RUN python3 -m pip --no-cache-dir install \
 
