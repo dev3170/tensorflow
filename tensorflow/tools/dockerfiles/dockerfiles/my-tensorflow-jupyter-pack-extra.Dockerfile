@@ -61,7 +61,7 @@ RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip
 
-RUN python3 -m pip --no-cache-dir install --upgrade \
+RUN python3 -m pip --no-cache-dir install --upgrade --no-use-pep517 \
     pip \
     setuptools
    
@@ -87,7 +87,7 @@ RUN apt-get update && apt-get install -y \
     #pocketsphinx - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
     #pocketsphinx 
 
-RUN python3 -m pip --no-cache-dir install \
+RUN python3 -m pip --no-cache-dir install --no-use-pep517 \
 
     #Pillow - biblioteca de imagens Python
     Pillow \
@@ -211,10 +211,7 @@ RUN python3 -m pip --no-cache-dir install \
     urllib3 \
     
      #playsound - módulo de função única sem dependências para reproduzir sons.
-    playsound \
-    
-    #google api python client - conecta na api do google cloud
-    google-api-python-client 
+    playsound 
 
     
 #Bazel é uma ferramenta de software livre que permite a automação da construção e teste de software
@@ -230,7 +227,7 @@ RUN mkdir /bazel && \
 COPY bashrc /etc/bash.bashrc
 RUN chmod a+rwx /etc/bash.bashrc
 
-RUN python3 -m pip install --no-cache-dir jupyter matplotlib
+RUN python3 -m pip install --no-cache-dir jupyter matplotlib --no-use-pep517
 # Pin ipykernel and nbformat; see https://github.com/ipython/ipykernel/issues/422
 RUN python3 -m pip install --no-cache-dir jupyter_http_over_ws ipykernel==5.1.1 nbformat==4.4.0
 RUN jupyter serverextension enable --py jupyter_http_over_ws
