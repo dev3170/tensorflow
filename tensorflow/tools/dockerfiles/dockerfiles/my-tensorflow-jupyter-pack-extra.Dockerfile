@@ -61,7 +61,7 @@ RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip
 
-RUN python3 -m pip --no-cache-dir install --upgrade --no-use-pep517 \
+RUN python3 -m pip --no-cache-dir install --upgrade \
     pip \
     setuptools
    
@@ -86,7 +86,7 @@ RUN apt-get update && apt-get install -y \
     #pocketsphinx - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
     #pocketsphinx 
 
-RUN python3 -m pip --no-cache-dir install --no-use-pep517 \
+RUN python3 -m pip --no-cache-dir install \
 
     #Pillow - biblioteca de imagens Python
     Pillow \
