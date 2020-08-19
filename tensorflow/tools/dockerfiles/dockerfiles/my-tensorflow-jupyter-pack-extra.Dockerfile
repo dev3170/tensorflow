@@ -88,9 +88,12 @@ RUN apt-get update && apt-get install -y \
   
 
 #pocketsphinx - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
-RUN python3 -m pip install --upgrade pocketsphinx
+#RUN python3 -m pip install --upgrade pocketsphinx
 
 RUN python3 -m pip --no-cache-dir install \
+     
+    #pocketsphinx - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
+    pocketsphinx \
 
     #Pillow - biblioteca de imagens Python
     Pillow \
