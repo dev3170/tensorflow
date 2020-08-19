@@ -191,7 +191,7 @@ RUN python3 -m pip --no-cache-dir install \
     ecapture \
     
     #pyaudio - pacote para acessar seu microfone com SpeechRecognizer
-    PyAudio \
+    #PyAudio \
     
     #gTTS - biblioteca Python e ferramenta CLI para fazer interface com a API text-to-speech do Google Translate
     gTTS \
@@ -206,7 +206,7 @@ RUN python3 -m pip --no-cache-dir install \
     urllib3 \
     
     #pocketsphinx2 - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
-    pocketsphinx2 \
+    #pocketsphinx2 \
     
     #playsound - módulo de função única sem dependências para reproduzir sons.
     playsound \
@@ -215,11 +215,11 @@ RUN python3 -m pip --no-cache-dir install \
     google-api-python-client \
     
     #re2 - pacote que fornece expressões regulares
-    re2 
+    #re2 
 
     
 #Instalar pacote dos idiomas pt, es, en do spacy   
-RUN python3 -m spacy download en && python -m spacy download pt && python -m spacy download es
+RUN python3 -m spacy download en && python3 -m spacy download pt && python3 -m spacy download es
     
 #Bazel é uma ferramenta de software livre que permite a automação da construção e teste de software
 # Install bazel
