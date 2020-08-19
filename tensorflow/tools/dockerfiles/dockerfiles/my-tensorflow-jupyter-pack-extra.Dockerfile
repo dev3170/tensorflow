@@ -59,8 +59,7 @@ ENV LANG C.UTF-8
 
 RUN apt-get update && apt-get install -y \
     python3 \
-    python3-pip \
-    nano
+    python3-pip
 
 RUN python3 -m pip --no-cache-dir install --upgrade \
     pip \
@@ -77,7 +76,11 @@ RUN apt-get update && apt-get install -y \
     openjdk-8-jdk \
     python3-dev \
     virtualenv \
-    swig 
+    swig \
+    #lib para rodar o pyaudio
+    python3-all-dev \
+    libpulse-dev \
+    nano 
 
 RUN python3 -m pip --no-cache-dir install \
 
@@ -190,9 +193,6 @@ RUN python3 -m pip --no-cache-dir install \
     #ecapture - Este módulo é usado para capturar imagens de sua câmera
     ecapture \
     
-    #pyaudio - pacote para acessar seu microfone com SpeechRecognizer
-    #PyAudio \
-    
     #gTTS - biblioteca Python e ferramenta CLI para fazer interface com a API text-to-speech do Google Translate
     gTTS \
     
@@ -205,21 +205,15 @@ RUN python3 -m pip --no-cache-dir install \
     #urllib3 - módulo urllib no Python3, acessar sites, baixar dados, analisar dados, modificar seus cabeçalhos e fazer qualquer solicitação GET e POST
     urllib3 \
     
-    #pocketsphinx2 - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
-    #pocketsphinx2 \
-    
-    #playsound - módulo de função única sem dependências para reproduzir sons.
+     #playsound - módulo de função única sem dependências para reproduzir sons.
     playsound \
     
     #google api python client - conecta na api do google cloud
     google-api-python-client \
     
-    #re2 - pacote que fornece expressões regulares
-    #re2 
-
-    
-#Instalar pacote dos idiomas pt, es, en do spacy   
-RUN python3 -m spacy download en && python3 -m spacy download pt && python3 -m spacy download es
+    #comando para rodar o pyaudio e pocketsphinx2 = sudo apt-get install python3 python3-all-dev python3-pip build-essential swig git libpulse-dev  
+    #pocketsphinx2 - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
+    pocketsphinx2
     
 #Bazel é uma ferramenta de software livre que permite a automação da construção e teste de software
 # Install bazel
