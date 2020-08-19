@@ -125,23 +125,17 @@ RUN python3 -m pip --no-cache-dir install \
     #web crawling que faz extração de dados em websites
     Scrapy \
     
-    #
-    #pypi \
-    
     #conecta com banco de dados Mongodb
     pymongo \
     
     #Conecte-se a um banco de dados usando strings de conexão de URL SQLAlchemy
     ipython-sql \
     
-    #Este pacote fornece uma API para executar meta-comandos (também conhecidos como “especiais” ou “comandos de barra invertida”) no PostgreSQL.
-    #pgspecial \
-    
     #conecta com banco de dados Elasticsearch
     eland \
     
-    #PyTorch - biblioteca de aprendizado de máquina, usada para aplicativos como visão computacional e processamento de linguagem natural
-    pytorch \
+    #Torch - biblioteca de aprendizado de máquina, usada para aplicativos como visão computacional e processamento de linguagem natural
+    torch \
     
     #Theano - biblioteca Python e um compilador que torna a computação 140x mais rápida
     Theano \
