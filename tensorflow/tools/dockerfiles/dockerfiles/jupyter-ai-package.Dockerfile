@@ -142,8 +142,6 @@ RUN python3 -m pip --no-cache-dir install \
     bokeh \
     #Cirq - biblioteca Python geralmente para circuitos quânticos de escala intermediária ruidosa (NISQ)
     cirq \
-    #OpenCV - pacote para processamento de imagens
-    opencv-python \
     #spacy - biblioteca de processamento de linguagem natural para Python
     spacy \
     #face_recognition - biblioteca de reconhecimento facial em foto e video
@@ -166,6 +164,8 @@ RUN python3 -m pip --no-cache-dir install \
     #xsmtplib \
     #urllib3 - módulo urllib no Python3, acessar sites, baixar dados, analisar dados, modificar seus cabeçalhos e fazer qualquer solicitação GET e POST
     #urllib3 \
+    #OpenCV - pacote para processamento de imagens
+    #opencv-python \ 
     #playsound - módulo de função única sem dependências para reproduzir sons.
     #playsound 
     #pocketsphinx - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
