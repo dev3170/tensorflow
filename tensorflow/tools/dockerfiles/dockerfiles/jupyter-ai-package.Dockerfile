@@ -157,17 +157,17 @@ RUN python3 -m pip --no-cache-dir install \
     #datetime2 - reconhece data e hora
     datetime2 \
     #ecapture - Este módulo é usado para capturar imagens de sua câmera
-    ecapture \
+    ecapture 
     #gTTS - biblioteca Python e ferramenta CLI para fazer interface com a API text-to-speech do Google Translate
-    gTTS \
+    #gTTS \
     #Pygame - conjunto de plataforma cruzada de módulos Python projetado para escrever videogames
-    Pygame \
+    #Pygame \
     #xsmtplib - enviar e-mails com Python por SMTP
-    xsmtplib \
+    #xsmtplib \
     #urllib3 - módulo urllib no Python3, acessar sites, baixar dados, analisar dados, modificar seus cabeçalhos e fazer qualquer solicitação GET e POST
-    urllib3 \
+    #urllib3 \
     #playsound - módulo de função única sem dependências para reproduzir sons.
-    playsound 
+    #playsound 
     #pocketsphinx - kit de ferramentas de código aberto CMU Sphinx para reconhecimento de voz online e offline
     #pocketsphinx
 
