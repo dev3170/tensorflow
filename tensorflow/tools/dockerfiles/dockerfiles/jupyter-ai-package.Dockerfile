@@ -78,9 +78,9 @@ RUN apt-get update && apt-get install -y \
     virtualenv \
     swig \
     #Adicionado libs
-    nano \
-    libasound2-dev \
-    libpulse-dev
+    nano
+    #libasound2-dev \
+    #libpulse-dev
 
 RUN python3 -m pip --no-cache-dir install \
     #Pillow - biblioteca de imagens Python
