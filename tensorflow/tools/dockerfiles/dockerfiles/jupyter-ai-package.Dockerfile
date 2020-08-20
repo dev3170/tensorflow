@@ -147,17 +147,17 @@ RUN python3 -m pip --no-cache-dir install \
     #spacy - biblioteca de processamento de linguagem natural para Python
     spacy \
     #face_recognition - biblioteca de reconhecimento facial em foto e video
-    face_recognition \
+    face_recognition 
     #pyttsx3 - biblioteca de conversão de texto em fala em Python, que funciona offline 
-    pyttsx3 \
+    #pyttsx3 \
     #SpeechRecognition - Biblioteca para realização de reconhecimento de fala, com suporte para diversos engines e APIs, online e offline.
-    SpeechRecognition \
+    #SpeechRecognition \
     #wikipedia - Este pacote em python extrai os dados necessários da Wikipedia
-    wikipedia \
+    #wikipedia \
     #datetime2 - reconhece data e hora
-    datetime2 \
+    #datetime2 \
     #ecapture - Este módulo é usado para capturar imagens de sua câmera
-    ecapture 
+    #ecapture \
     #gTTS - biblioteca Python e ferramenta CLI para fazer interface com a API text-to-speech do Google Translate
     #gTTS \
     #Pygame - conjunto de plataforma cruzada de módulos Python projetado para escrever videogames
